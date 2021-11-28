@@ -7,7 +7,7 @@ word = input()
 base = 0
 def search(text, word):
     base = text.split(" ")
-    if (word in base):
+    if word in base:
        return("Word found")
     else:
        return("Word not found")
