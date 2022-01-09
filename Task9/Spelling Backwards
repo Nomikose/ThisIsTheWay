@@ -1,0 +1,12 @@
+# Given a string as input, use recursion to output each letter of the strings in reverse order, on a new line.
+
+def spell(txt):
+    if len(txt) == 1:
+        print(txt)
+        return txt
+    else:
+        print(txt[len(txt) - 1])
+        return spell(txt[:len(txt) - 1]) + txt[len(txt) - 1]
+
+txt = input()
+spell(txt)
